@@ -1,0 +1,15 @@
+{% extends 'index.html'%}
+
+{% block body_block %}
+
+{%if user.authenticated %}
+<a href="logout">logout</a>
+{%else%}
+<a href="register">Registration</a>
+<a href="login">Login</a>
+{% endif %}
+<h1>Hello, from home</h1>
+
+
+
+{% endblock %}
